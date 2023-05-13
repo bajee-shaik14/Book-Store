@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# Book-Store-App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This App is the simple Book Store App that displays a list of books and allows users to add new books to the list.
 
-## Available Scripts
+SET UP INSTRUCTIONS:
+* Start up the app using "npm start".
 
-In the project directory, you can run:
+The App has two screens:
+1. A list screen that displays the list of books fetched from the REST API 
+2. A form screen that allows the users to add a new book to the list.
 
-### `npm start`
+FUNCTIONALITY:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+*** When the app is opened initially:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* List of books fetched from the REST API is displayed indication the book image,title and author.
+* "Add Book" button is available at the right top corner of the screen
+* The list of books displayed in the screen are clickable. Upon clicking any book, the page routes and corresponding
+  book details(title and story/description) are displayed. "Back" button is available at the left corner in this page so that the           user can navigate back to the home screen.
+         
+*** When "Add Book" button is clicked:
 
-### `npm test`
+* Form is displayed on the screen where user can input new book title and author.
+* Both the input fields are mandatory to add the book to the list. If any one of the input fields is found empty,
+  an alert popup is displayed saying "Enter both the fields"
+* On giving both the input fields and clicking the "Add" button provided, 
+  an alert popup is displayed saying "Book added successfully!" and finally new book details given in the form 
+  is displayed next to the books previously fetched.
+         
+*** Image Url used: 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+*  https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNQPbgVBlKHEugwwGPdIKM_kUzx7PlmD7hKOABqWmjFg&usqp=CAU&ec=48665699
 
-### `npm run build`
+*** REST API used:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* https://example-data.draftbit.com/books?_limit=20  
+* As the limit is 20 in the code implementation, first 20 books fron the list is rendered initially when the app opened.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
