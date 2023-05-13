@@ -1,0 +1,24 @@
+.link {
+  text-decoration: none;
+}
+.bg-container {
+  text-align: center;
+  font-family: sans-serif;
+  color: gray;
+}
+.not-found {
+  height: 300px;
+  width: 500px;
+}
+.not-found-text {
+  color: gray;
+  margin-top: 20px;
+}
+.sorry-msg {
+  color: gray;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+button {
+  margin-top: 20px;
+} 

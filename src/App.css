@@ -1,0 +1,20 @@
+.App {
+  text-align: center;
+  background-color: black;
+}
+.app-title{
+  color: #ffffff;
+  padding-top: 5px;
+}
+.home-title {
+  color: gray;
+  padding-top: 7px;
+  font-size: 22px;
+  margin-right: 500px;
+}
+.home-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px;
+}

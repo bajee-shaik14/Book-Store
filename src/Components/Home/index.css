@@ -1,0 +1,25 @@
+.head-contain {
+  background-size: cover;
+  margin: 5%;
+  text-align: center;
+  margin-top: 15px;
+}
+.heading {
+  color: #1e293b;
+  font-size: 32px;
+  font-family: sans-serif;
+}
+.item-details {
+  display: flex;
+  flex-wrap: wrap;
+}
+.title-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0px;
+}
+.link {
+  text-decoration: none;
+}
